@@ -1,0 +1,35 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.menulist.show {
+    right: 0;
+}
+
+.menuicon.show .bar:nth-child(1){
+    transform: translatey(9px) rotate(45deg);
+}
+.menuicon.show .bar:nth-child(2){
+    opacity: 0;
+}
+.menuicon.show .bar:nth-child(3){
+    transform: translatey(-9px) rotate(-45deg);
+}
+.center-icon{        
+    transform: translate(-50% , -50%);
+    
+    
+}
+
+
+.three-line{
+    overflow: hidden;    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
